@@ -15,10 +15,10 @@ More about creditCardHelper:
 2.use CREDIT_CARD_VALIDATION to store validation rules on card type 
 ```json
 {
-    idDigitNumbers: list of card prefix number,
-    validLength: required card length,
-    groupFormat: a list of [start end] to group card number,
-    cvv2: required cvv2 length,
+    "idDigitNumbers": "list of card prefix number",
+    "validLength": "required card length",
+    "groupFormat": "a list of [start end] to group card number",
+    "cvv2": "required cvv2 length",
 }
 ```
 
