@@ -108,8 +108,6 @@ export const CreditCardBox = ({
             [fieldName]: event.currentTarget.value
         });
     };
-    const makeHandleValidateField = (fieldName: FormFieldName) => (event: React.FormEvent<HTMLInputElement>) => {
-    };
     const handleNumberChange = (event: React.FormEvent<HTMLInputElement>) => {
         setFormErrors({
             ...formErrors,
@@ -201,7 +199,6 @@ export const CreditCardBox = ({
                         value={formValues.name}
                         type="text"
                         onChange={makeHandleFieldChange(FormFieldName.NAME)}
-                        onBlur={makeHandleValidateField(FormFieldName.NAME)}
                     />
                     <ErrorMessage name={FormFieldName.NAME} errors={formErrors}/>
                 </div>
@@ -213,7 +210,6 @@ export const CreditCardBox = ({
                         value={formValues.number}
                         type="text"
                         onChange={handleNumberChange}
-                        onBlur={makeHandleValidateField(FormFieldName.NUMBER)}
                     />
                     <ErrorMessage name={FormFieldName.NUMBER} errors={formErrors}/>
                 </div>
